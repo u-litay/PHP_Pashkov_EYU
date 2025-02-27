@@ -1,0 +1,25 @@
+{
+    "name": "u_litay/task01",
+    "description": "Task 01",
+    "autoload": {
+        "psr-4": {
+            "Task01\\": "src/"
+        },
+        "files": [
+            "src/Controller.php",
+            "src/View.php"
+        ]
+    },
+    "bin": [
+        "bin"
+    ],
+    "authors": [
+        {
+            "name": "u-litay",
+            "email": "grishaevzzz@mail.ru"
+        }
+    ],
+    "require": {
+        "wp-cli/php-cli-tools": "^0.12.1"
+    }
+}
