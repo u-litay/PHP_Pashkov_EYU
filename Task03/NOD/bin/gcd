@@ -1,0 +1,14 @@
+#!/usr/bin/env php
+<?php
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use Neospaer\NOD\Controller;
+
+// Получаем аргументы командной строки (игнорируем первый аргумент — имя скрипта)
+$args = $argv;
+array_shift($args); // Удаляем путь к скрипту
+
+$playerName = !empty($args[0]) ? $args[0] : "Player"; // Если имя не указано, используем "Player"
+
+Controller\startGame($playerName);
