@@ -1,0 +1,32 @@
+{
+    "name": "shindasayonara/php_puchkin_iyu",
+    "description": "Implementation of a php program on the topic \"Greatest common divisor\"",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Shindasayonara\\GCD\\": "src/"
+        },
+        "files": [
+            "src/Controller.php",
+            "src/View.php",
+            "src/Database.php",
+            "src/Game.php"
+        ]
+    },
+    "bin": [
+        "bin/gcd"
+    ],
+    "authors": [
+        {
+            "name": "Ioann Existence",
+            "email": "disciplesvanyshu@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "wp-cli/php-cli-tools": "^0.12.0",
+        "slim/slim": "^4.0",
+        "slim/psr7": "^1.6"
+    }
+}
